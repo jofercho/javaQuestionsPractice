@@ -16,5 +16,6 @@ public class MaxSubArrayTest {
         assertThat(new MaxSubArray().maxSubArray(arr3)).isEqualTo(23);
         assertThat(new MaxSubArray().maxSubArray(arr4)).isEqualTo(-1);
         assertThat(new MaxSubArray().maxSubArray(arr5)).isEqualTo(1);
+        System.out.println("funciona");
     }
 }
