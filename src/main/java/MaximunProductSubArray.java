@@ -1,16 +1,14 @@
 public class MaximunProductSubArray {
     public int maxProduct(int[] nums) {
         int solution = nums[0];
-        int currentMin = nums[0];
-        int currentMax = nums[0];
+        int max = nums[0];
+        int min = nums[0];
         for (int i = 1; i < nums.length; i++) {
-
-            int tmp = currentMax;
-            currentMax = Math.max(Math.max(currentMax * nums[i], currentMin * nums[i]), nums[i]);
-            currentMin = Math.min(Math.min(tmp * nums[i], currentMin * nums[i]), nums[i]);
-            solution = Math.max(solution, currentMax);
+            int maxNotUpdated = max;
+            max = Math.max(Math.max(maxNotUpdated  * nums[i], min * nums[i]), nums[i]);
+            min = Math.min(Math.min(maxNotUpdated  * nums[i], min * nums[i]), nums[i]);
+            solution = Math.max(max, solution);
         }
-
         return solution;
     }
 }
