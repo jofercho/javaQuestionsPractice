@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class IsNumberOnTheList {
-
+//test
   public List<Integer> isNumberOnTheLists(List<Integer> a, List<Integer> b, List<Integer> c) {
     List<Integer> solution = new ArrayList<>();
     Map<Integer, Integer> numbers = new HashMap<>();
