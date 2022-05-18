@@ -1,6 +1,5 @@
 import org.junit.Assert;
 import org.junit.Test;
-//test
 public class TwoSumIITest {
   @Test
   public void twoSumIITest() {
