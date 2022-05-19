@@ -13,6 +13,7 @@ public class ThreeSumTest {
     output.add(Arrays.asList(-1, 0, 1));
     ThreeSum threeSum = new ThreeSum();
     List<List<Integer>> solution = threeSum.threeSum(input1);
+    System.out.println(output);
     //TODO compare output with solution
   }
 }
