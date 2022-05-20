@@ -1,3 +1,5 @@
+package array;
+
 public class FindMinInSortedRotated {
     public int findMin(int[] nums) {
         if (nums.length == 0) return -1;

@@ -1,3 +1,6 @@
+package array;
+
+import array.ProductExceptSelf;
 import org.junit.Assert;
 import org.junit.Test;
 

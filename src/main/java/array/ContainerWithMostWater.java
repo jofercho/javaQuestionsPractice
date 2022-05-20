@@ -1,3 +1,5 @@
+package array;
+
 public class ContainerWithMostWater {
     public int maxArea(int[] height){
         int maxArea = 0;

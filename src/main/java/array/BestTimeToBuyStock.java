@@ -1,3 +1,5 @@
+package array;
+
 public class BestTimeToBuyStock {
     public int maxProfit(int[] prices) {
         int min = Integer.MAX_VALUE;

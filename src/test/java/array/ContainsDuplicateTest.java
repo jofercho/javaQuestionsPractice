@@ -1,3 +1,6 @@
+package array;
+
+import array.ContainsDuplicate;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

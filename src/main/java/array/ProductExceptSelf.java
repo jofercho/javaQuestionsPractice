@@ -1,3 +1,5 @@
+package array;
+
 public class ProductExceptSelf {
   public int[] productExceptSelf(int[] nums){
     int[] solution = new int[nums.length];

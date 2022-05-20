@@ -1,8 +1,7 @@
-import org.junit.Test;
+package array;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import array.BestTimeToBuyStock;
+import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
