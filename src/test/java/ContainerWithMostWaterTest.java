@@ -4,6 +4,7 @@ import org.junit.Test;
 public class ContainerWithMostWaterTest {
   @Test
   public void containerWithMostWater() {
+    //test
     int[] input1 = new int[] {1, 8, 6, 2, 5, 4, 8, 3, 7};
     int[] input2 = new int[] {1, 1};
     int output1 = 49;
