@@ -10,20 +10,21 @@ public class ThreeSum {
     List<List<Integer>> solution = new LinkedList<>();
     for (int i = 0; i < nums.length - 2; i++) {
       if (i == 0 || nums[i] != nums[i - 1]) {
-        int max = nums.length - 1; //
+        // since here we make a two sum
+        int max = nums.length - 1;
         int min = i + 1;
-        int sum = 0 - nums[i]; // 0 because is the target
+        int complement = 0 - nums[i];
         while (min < max) {
-          if (sum == nums[min] + nums[max]) {
+          if (complement == nums[max] + nums[min]) {
             solution.add(Arrays.asList(nums[i], nums[min], nums[max]));
-            while (min<max && nums[min] == nums[min] + 1) min++;
-            while (min<max && nums[max] == nums[max] - 1) max--;
+            while (max > min && nums[min] == nums[min + 1]) min++;
+            while (max > min && nums[max] == nums[max - 1]) max--;
             max--;
             min++;
-          }else if(nums[min] + nums[max] > sum){
-            max--;
+          } else if (complement < nums[min] + nums[max]) {
+            min++;
           } else {
-            min++;
+            max--;
           }
         }
       }
