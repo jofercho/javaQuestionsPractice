@@ -7,6 +7,6 @@ public class SumOfTwoIntegers {
       a = a ^ b;
       b = tmp;
     }
-    return a;
+    return  a;
   }
 }
