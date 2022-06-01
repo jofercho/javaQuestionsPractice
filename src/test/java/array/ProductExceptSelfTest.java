@@ -16,7 +16,6 @@ public class ProductExceptSelfTest {
         int[] output1 = new int[]{24,12,8,6};
         int[] output2 = new int[]{0,0,9,0,0};
       ProductExceptSelf productExceptSelf = new ProductExceptSelf();
-      Assert.assertNotNull(productExceptSelf.productExceptSelf(nums1));
       Assert.assertArrayEquals(productExceptSelf.productExceptSelf(nums1), output1);
       Assert.assertArrayEquals(productExceptSelf.productExceptSelf(nums2), output2);
     }

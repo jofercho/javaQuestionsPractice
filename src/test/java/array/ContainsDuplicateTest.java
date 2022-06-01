@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ContainsDuplicateTest {
+public class    ContainsDuplicateTest {
 
   @Test
   public void containsDuplicateTest(){
